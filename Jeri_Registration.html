@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Student's Registration</title>
+  <link  rel="stylesheet" href=reg_css.css>
+ </head>
+ <body>
+
+ <script src="Jeri_registration_js.js"></script>
+  
+  <div style="background-color:white;">
+  <center><h2><u>Student Registration Form</u></h2></center>
+  </div>
+  <div>
+  <form id="StudentRegistration">
+    <label>First Name</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your First Name"><br>
+
+    <label>Last Name</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" ><br>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob" name="dob"><br>
+
+    <label>Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Mail ID"><br>
+
+	<label>Password</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label>Mobile Number</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" ><br>
+ </div>
+
+ <div>
+    <label>Gender</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    Male
+    <input type="radio" id="female" name="gender" value="Female">
+    Female<br><br>
+ </div>
+
+ <div>
+    <label>Address</label>
+	<textarea rows=3  id="address" name="address" placeholder="Enter your Address"></textarea>
+
+    <!-- <input type="text" id="address" name="address" placeholder="Enter your Address" > --><br>
+
+    <label>City</label>
+    <input type="text" id="city" name="city" placeholder="Enter your City" ><br>
+
+    <label>Pin Code</label>
+    <input type="text" id="pincode" name="pincode" placeholder="Enter Pincode" ><br>
+
+    <label>State</label>
+    <input type="text" id="state" name="state" placeholder="Enter your State" ><br>
+
+    <label>Country</label>
+    <input type="text" id="country" name="country" placeholder="Enter your Country" ><br>
+</div>
+
+	<div>
+    <label>Hobbies</label>
+    <input type="checkbox" id="hob" name="hobbies" value="cricket">
+    Cricket
+    <input type="checkbox" id="hob" name="hobbies" value="tennis">
+    Tennis
+    <input type="checkbox" id="hob" name="hobbies" value="baseball">
+    BaseBall
+    <input type="checkbox" id="hob" name="hobbies" value="football">
+    Football<br><br>
+	</div>
+	
+	<div>
+	<label>Courses Applied for</label>
+    <input type="radio" id="cur" name="courses" value="BCA">
+    BCA
+    <input type="radio" id="cur" name="courses" value="B.Com">
+    B.Com
+    <input type="radio" id="cur" name="courses" value="B.Sc">
+    B.Sc
+    <input type="radio" id="cur" name="courses" value="B.A">
+    B.A<br><br>
+	</div>
+
+  <div>
+    <label><b>Qualification</b></label>
+    <table cellspacing=5 cellpadding=6>
+      <tr>
+	    <th align=left>SI.No Examination</th>
+        <th align=center>Board</th>
+        <th style="text-align: center;">Percentage</th>
+        <th style="text-align: center;">Year of Passing</th>
+      </tr>
+      <tr> 
+	    <td>
+		  1&nbsp&nbsp&nbsp Class X
+		</td>
+        <td>
+          <input type="text" id="board1" name="board1" size=40>
+        </td>
+        <td>
+		  <input type="text" id="percentage1" name="percentage1" size=40>
+        </td>
+        <td>
+          <input type="text" id="yearofpassing1" name="yearofpassing1" size=40>
+        </td>
+      </tr>
+
+	  <tr>
+	    <td>
+		  2&nbsp&nbsp&nbsp Class XII
+		</td>
+        <td>
+          <input type="text" id="board2" name="board2" size=40>
+        </td>
+        <td>
+		  <input type="text" id="percentage2" name="percentage2" size=40>
+        </td>
+        <td>
+          <input type="text" id="yearofpassing2" name="yearofpassing2" size=40>
+        </td>
+      </tr>
+
+	  <tr>
+	    <td>
+		  3&nbsp&nbsp&nbsp Graduation
+		</td>
+        <td>
+          <input type="text" id="board3" name="board3" size=40>
+        </td>
+        <td>
+		  <input type="text" id="percentage3" name="percentage3" size=40>
+        </td>
+        <td>
+          <input type="text" id="yearofpassing3" name="yearofpassing3" size=40>
+        </td>
+      </tr>
+
+	  <tr>
+	    <td>
+		  4&nbsp&nbsp&nbsp Masters
+		</td>
+        <td>
+          <input type="text" id="board4" name="board4" size=40>
+        </td>
+        <td>
+		  <input type="text" id="percentage4" name="percentage4" size=40>
+        </td>
+        <td>
+          <input type="text" id="yearofpassing4" name="yearofpassing4" size=40>
+        </td>
+      </tr>
+      
+    </table>
+	
+	<br>
+	<center>
+    <input type="submit" value="Login" style="background-color:#00cc00; color:white; height:30px; width:90px;" onclick="login()">
+    <input type="reset" value="Reset"  style="background-color:#ec0006; color:white; height:30px; width:90px;">
+	</center>
+  </form>
+</div>
+
+ </body>
+</html>
